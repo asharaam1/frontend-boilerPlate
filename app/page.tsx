@@ -1,31 +1,10 @@
 import Link from 'next/link';
+import Header from '@/components/Header';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-cyan-50">
-      {/* Navigation */}
-      <nav className="flex items-center justify-between p-4 sm:p-6 lg:px-8">
-        <div className="flex items-center">
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-indigo-600 to-cyan-600 rounded-lg"></div>
-            <span className="text-lg sm:text-xl font-bold text-gray-900">YourApp</span>
-          </div>
-        </div>
-        <div className="flex items-center space-x-2 sm:space-x-4">
-          <Link
-            href="/login"
-            className="text-gray-600 hover:text-gray-900 px-2 py-1 sm:px-3 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-colors"
-          >
-            Sign In
-          </Link>
-          <Link
-            href="/signup"
-            className="bg-gradient-to-r from-indigo-600 to-cyan-600 text-white px-3 py-2 sm:px-4 rounded-lg text-xs sm:text-sm font-medium hover:from-indigo-700 hover:to-cyan-700 transition-all duration-200 transform hover:scale-105"
-          >
-            Get Started
-          </Link>
-        </div>
-      </nav>
+      <Header />
 
       {/* Hero Section */}
       <div className="relative isolate px-4 sm:px-6 lg:px-8">
